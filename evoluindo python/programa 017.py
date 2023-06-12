@@ -4,7 +4,7 @@
 # OR - PELO MENOS UMA EXPRESSÃO SEJA VERDADEIRA
 # NOT - INVERTER EXPRESSÃO
 
-doente = True
+doente = False
 
 if(not doente):
     print("acesso liberado")
