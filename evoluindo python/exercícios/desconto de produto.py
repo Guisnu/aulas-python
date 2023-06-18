@@ -1,21 +1,18 @@
-valor = float(input("valor do produto: "))
+preco = float(input("Digite o valor da compra: "))
 
-valor_desconto10 = valor * 0.1
-valor_desconto5 = valor * 0.05
+print("1. À vista\n2. À vista no cartão\n3. Parcelado")
+opcao = int(input("Digite a forma de pagamento: "))
 
-forma_de_pagamento = str(input("escolha a forma de pagamento: A(avista), C(cartão) P(parcelado): "))
-
-if(forma_de_pagamento == "A" or  forma_de_pagamento == "a"):
-    resultado_final = valor - valor_desconto10
-    print(f"O valor final com desconto fica: {resultado_final}")
-
-if(forma_de_pagamento == "C" or forma_de_pagamento == "c"):
-    resultado_final = valor - valor_desconto5
-    print(f"O valor final do produto com desconto de cartaão fica: {resultado_final}")
-        
-if(forma_de_pagamento == "P" or forma_de_pagamento == "p"):
-    resultado_final = valor * 1
-    print(f"O valor final do produto é {resultado_final} pois em parcelamentos não há descontos")
+if(opcao == 1):
+    calculo = preco * 0.90
+    print(f"Preço final: {calculo}")
+elif(opcao == 2):
+    calculo = preco * 0.95
+    print(f"Preço final: {calculo}")
+elif(opcao == 3):
+    print(f"preço final: {preco}")
+else:
+    print("Opção inválida!")
 
 
 
